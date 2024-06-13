@@ -2,6 +2,8 @@ import math
 
 # Sets up a list of lists. Each list represents a cross-section of the stellarator and each item in the nested list
 # represents the strength of each magnet going counterclockwise around the cross-section
+# All cross sections are assumed to be equidistant around a toroidal ring, and all magnets are assumed to be equidistant around each cross section.
+# The length of each list must be equal for calculations to be accurate.
 MagnetMatrix = [
     [1,1,1,1],
     [1,1,1,1],
