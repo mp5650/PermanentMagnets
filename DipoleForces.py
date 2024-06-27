@@ -16,7 +16,7 @@ def DipoleForce(dipoleMoment1, dipolePosition1, dipoleMoment2, dipolePosition2):
     R = np.array(dipolePosition2) - np.array(dipolePosition1)
     mag_R = np.sqrt(R.dot(R))
     mu = 4 * math.pi * pow(10,-7)
-    coefficient =  (3*mu)/(4*math.pi*pow(mag_R,5)
+    coefficient =  (3*mu)/(4*math.pi*pow(mag_R,5))
     first_term = m1.dot(R)*m2
     second_term = m2.dot(R)*m1
     third_term = m1.dot(m2)*R
